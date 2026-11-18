@@ -1,0 +1,117 @@
+{
+"$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
+"logo": {
+    "type": "kitty",
+    "source": "/home/travis/mysources/Tux.png", // https://en.wikipedia.org/wiki/Linux#/media/File:Tux.svg
+    "width": 20,
+    "height": 17,
+    "padding": {
+        "top": 0,
+        "left": 0,
+        "right": 5,
+    }
+},
+"display": {
+"separator": "  :  "
+},
+"modules": [
+    {
+            "type": "custom",
+            "format": "┌───────────────────── System ───────────────────────┐"
+
+        },
+"break",    {
+    "type": "os",
+    "key": "   󰣭 OS     ",
+    "keyColor": "green"
+    },
+    { 
+    "type": "de",
+    "key": "    DE     ",
+    "keyColor": "white"
+    },
+    {
+    "type": "kernel",
+    "key": "    Kernel ",
+    "keyColor": "green"
+    },
+    {
+    "type": "packages",
+    "key": "   󰏖 Packages",
+    "keyColor": "white"
+    },
+     "break",
+    {
+            "type": "custom",
+            "format": "└────────────────────────────────────────────────────┘"
+    },
+    "break",
+    {
+            "type": "custom",
+            "format": "┌──────────────────── Hardware ──────────────────────┐"
+
+     },
+     "break",
+    {
+    "type": "cpu",
+    "key": "    CPU    ",
+    "keyColor": "green"
+    },
+    {
+    "type": "gpu",
+    "hideType": "integrated",
+    "key": "    GPU    ",
+    "format": "{2}",
+    "keyColor": "white"
+    },
+    {
+    "type": "memory",
+    "key": "   󰾆 RAM    ",
+    "keyColor": "green"
+    },
+    {
+    "type": "disk",
+    "key": "    Storage",
+    "keyColor": "white"
+    },
+    {
+    "type": "display",
+    "key": "   󰍹 Display",
+    "keyColor": "green",
+    "compactType": "original-with-refresh-rate"
+    },
+    {
+    "type": "battery",
+    "key": "    Battery",
+    "keyColor": "white"
+    },
+    "break",
+    {
+            "type": "custom",
+            "format": "└────────────────────────────────────────────────────┘"
+    },
+    "break",
+    {
+            "type": "custom",
+            "format": "┌───────────────────── Status ───────────────────────┐"
+
+     },
+     "break",
+     {
+    "type": "command",
+    "key": "    OS Age ",
+    "text": "birth_install=$(stat -c %W /); current=$(date +%s); time_progression=$((current - birth_install)); days_difference=$((time_progression / 86400)); echo $days_difference days",
+    "keyColor": "green"
+     },
+     {
+    "type": "uptime",
+    "key": "    Uptime ",
+    "keyColor": "white"
+    },
+    "break",
+    {
+            "type": "custom",
+            "format": "└────────────────────────────────────────────────────┘"
+    },
+    ]
+}
