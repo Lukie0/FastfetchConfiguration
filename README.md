@@ -1,6 +1,6 @@
 My Fastfetch configuration that I currently use on my Linux Mint system.
 
-**Example:**
+**Image of configuration:**
 
 
 ![image alt](https://github.com/Lukie0/FastfetchConfiguration/blob/648fbfb5d2690eb7c9809619b7a5f3789ae3db64/ExampleScreenshot.png)
